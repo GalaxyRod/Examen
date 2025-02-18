@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Data</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @for(datos of dato; track datos.id){ 
+            <tr>
+                <td>{{ datos.nasa_id }}</td>
+                <td>{{ datos.title }}</td>
+                <td><img src= {{datos.image}}></td>
+                <td>{{ datos.description }}</td>
+            </tr>
+        }
+    </tbody>
+</table>

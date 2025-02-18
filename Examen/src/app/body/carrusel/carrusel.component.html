@@ -1,0 +1,18 @@
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src= "http://pluspng.com/img-png/nasa-logo-png-nasa-logo-1664.png" class="d-block w-100" alt="Imagen 1">
+          </div>
+       @for(datas of data; track datas.id){ 
+      <div class="carousel-item">
+        <img src= {{datas.image}} class="d-block w-100" alt="{{datas.title}}">
+      </div>
+    }
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
